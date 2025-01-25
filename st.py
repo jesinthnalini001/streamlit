@@ -1,6 +1,11 @@
 # filepath: hello_world.py
 import streamlit as st
 st.title('Hello, Vinoth!')
-st.write('Welcome to myapp!')
+st.write('Welcome to Streamlit!')
 
-st.write('TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest!')
+# Get the input as calendar date
+date = st.date_input('Select a date', datetime.now())
+
+# Display the selected date
+st.write('You selected:', date)
+
